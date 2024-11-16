@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Nax Surveys</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="NK-forms.css">
+    </head>
+
+    <body>
+      <div class="container">
+        <div class="form-group">
+      <h1 id="title" class="text-center">LOOMY STUDIOS Form </h1>
+      <p id="description" class="description text-center">Great thanks from Loomy Studios DEVs, your support is appreciated.</p>
+
+      <form id="survey-form">
+        <fieldset>
+        <label class="push" id="name-label">Name<input id="name" class="form-control" type="text" placeholder="Enter your name" required></label>
+        <label class="push" id="email-label">Email<input class="form-control" id="email" type="email" placeholder="Enter your email" required></label>
+        <label class="push" id="number-label">Age<input class="form-control" id="number" type="number" min="13" max="100" placeholder="Age" required></label>
+
+        <label class="push" for="dropdown">Which option best describes your current role?
+          <select class="form-control" id="dropdown">
+            <option>(Select current role)</option>
+            <option>Student</option>
+            <option>Full-time job</option>
+            <option>Rather not say</option>
+            <option>Other</option>
+            </select>
+            <br>
+        </fieldset>
+
+        <fieldset>
+          <p class="push">What offers would you like:</p>
+          <label><input class="input-radio" id="web" name="offer" type="radio" value="web" checked="">
+          Web Design
+          </label>
+          <label><input id="edit" class="input-radio" name="offer" type="radio" value="video">
+          Video Edit
+          </label>
+          <label><input  class="input-radio"id="web" name="offer" type="radio" value="3D" >
+         3D animation
+          </label>
+          <label><input class="input-radio" name="offer" id="web" type="radio" value="photo">
+          Photo Edit
+          </label>
+          </fieldset>
+          <br>
+
+          <fieldset>
+            <div>
+            <p class="push"> Choose a sub-field according to offer selected :</p>
+          <label>
+            <input value="Web-design" class="input-checkbox" type="checkbox" name="sub-field" >Front-end
+            </lable>
+            <label><input class="input-checkbox" value="web-design" type="checkbox" name="sub-field">Back-end
+            </lable>
+
+            <label><input class="input-checkbox"type="checkbox" value="video-edit" name="sub-field">Advertising video
+            </lable>
+            <label><input class="input-checkbox" class="input-radio" value="video-edit" type="checkbox" name="sub-field">YouTube video
+            </lable>
+            <label><input class="input-checkbox" value="pixar" type="checkbox" name="sub-field">Pixar
+            </lable>
+            <label><input class="input-checkbox" value="anime" type="checkbox" name="sub-field">Anime
+            </lable>
+            <label><input class="input-checkbox" value="effect" type="checkbox" name="sub-field">Photo effects
+            </lable>
+            <label><input class="input-checkbox" value="svg" type="checkbox" name="sub-field">SVG photo
+            </lable>
+
+        
+            <p class="push">Any more details to your choices?</p>
+            <textarea class="input-textarea" id="comment" name="comment" placeholder="Enter your suggestions here...."></textarea>
+         </div>
+    </fieldset>
+
+            <button class="submit-button" type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </form>
+       </div> 
+   </div>
+      </body>
+  </html>
